@@ -49,7 +49,7 @@ async def on_message(message):
         await client.send_message(message.channel, msg)
 
     #define command
-    if message.content.startswith('!define'):
+    if message.content.startswith('/define'):
         word = message.content[7:]
         msg = define(word).format(message)
         await client.send_message(message.channel, msg)
